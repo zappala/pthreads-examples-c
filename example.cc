@@ -61,6 +61,7 @@ main(int argc, char **argv) {
     // wait for threads to terminate.
     for (int i=0; i<num_threads; i++) {
         pthread_join(*threads[i], NULL);
+        delete threads[i];
     }
 }
 
@@ -75,6 +76,8 @@ void* print(void* ptr) {
     sleep(r);
     
     cout << "Thread " << data->number << " says hello." << endl;
+
+    delete data;
     
     pthread_exit(0);
 }
