@@ -26,3 +26,19 @@ message.
 statements from each thread may be jumbled. See subsequent code for
 how to do this properly.
 
+# Problem
+
+The file `problem.cc` shows a basic problem that exists when threads
+share memory but are not synchronized. Each time you run this code,
+the threads should count to a total of 200, but they have different
+answer each time.
+
+# Semaphore
+
+The file `semaphore.cc` shows how to use a semaphore to synchronize
+access to shared memory.
+
+# Mutex
+
+The file `mutex.cc` shows how to use a mutex to synchronize access to
+shared memory.
