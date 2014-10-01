@@ -3,7 +3,7 @@
 
 // Page 700
 
-// This program demonstrates how to use a mutex to solve the
+// This program demonstrates how to use a semaphore to solve the
 // synchronization problem.
 
 #include <pthread.h>
